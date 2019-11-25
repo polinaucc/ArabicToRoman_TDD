@@ -7,7 +7,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class MainTest {
-    ArabicToRomanConvertor convertor;
+    public ArabicToRomanConvertor convertor;
 
     @Before
     public void before() {
@@ -31,5 +31,15 @@ public class MainTest {
     @Test
     public void Convert_2_to_II(){
         Assert.assertEquals(convert(2),"II");
+    }
+
+    @Test
+    public void Convert_4_to_IV(){
+        Assert.assertEquals(convert(2),"II");
+    }
+
+    @Test
+    public void Convert_5_to_V(){
+        Assert.assertEquals(convert(5),"V");
     }
 }
