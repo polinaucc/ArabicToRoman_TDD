@@ -20,4 +20,9 @@ public class MainTest {
         Assert.assertTrue(romanNumber=="");
     }
 
+    @Test
+    public void Convert_1_to_I(){
+        String romanNumber = convertor.convert(1);
+        Assert.assertTrue(romanNumber=="I");
+    }
 }
