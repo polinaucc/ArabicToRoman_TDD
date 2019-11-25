@@ -24,6 +24,11 @@ public class MainTest {
     }
 
     @Test
+    public void Convert_Neg_to_EmptyStr(){
+        Assert.assertEquals(convert(-1),"");
+    }
+
+    @Test
     public void Convert_1_to_I(){
         Assert.assertEquals(convert(1),"I");
     }
@@ -35,11 +40,21 @@ public class MainTest {
 
     @Test
     public void Convert_4_to_IV(){
-        Assert.assertEquals(convert(2),"II");
+        Assert.assertEquals(convert(4),"IV");
     }
 
     @Test
     public void Convert_5_to_V(){
         Assert.assertEquals(convert(5),"V");
+    }
+
+    @Test
+    public void Convert_10_to_X(){
+        Assert.assertEquals(convert(10),"X");
+    }
+
+    @Test
+    public void Convert_9_to_IX(){
+        Assert.assertEquals(convert(9),"IX");
     }
 }
