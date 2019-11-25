@@ -57,4 +57,14 @@ public class MainTest {
     public void Convert_9_to_IX(){
         Assert.assertEquals(convert(9),"IX");
     }
+
+    @Test
+    public void Convert_2534_to_MMDXXXIV(){
+        Assert.assertEquals(convert(2534),"MMDXXXIV");
+    }
+
+    @Test
+    public void Convert_4000_to_EmptyStr(){
+        Assert.assertEquals(convert(4000),"");
+    }
 }

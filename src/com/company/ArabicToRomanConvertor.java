@@ -26,7 +26,7 @@ public class ArabicToRomanConvertor {
     public String convert (int arabicNumber){
         String romanNumber = "";
         for(Map.Entry<Integer, String> d: digits.entrySet()){
-            while (arabicNumber>=d.getKey()){
+            while (arabicNumber>=d.getKey() && arabicNumber<4000){
                 romanNumber += d.getValue();
                 arabicNumber-=d.getKey();
             }
