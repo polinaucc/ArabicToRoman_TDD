@@ -14,15 +14,22 @@ public class MainTest {
         convertor = new ArabicToRomanConvertor();
     }
 
+    private String convert(int arabicNumber){
+        return convertor.convert(arabicNumber);
+    }
+
     @Test
     public void Convert_0_to_EmptyStr(){
-        String romanNumber = convertor.convert(0);
-        Assert.assertTrue(romanNumber=="");
+        Assert.assertEquals(convert(0),"");
     }
 
     @Test
     public void Convert_1_to_I(){
-        String romanNumber = convertor.convert(1);
-        Assert.assertTrue(romanNumber=="I");
+        Assert.assertEquals(convert(1),"I");
+    }
+
+    @Test
+    public void Convert_2_to_II(){
+        Assert.assertEquals(convert(2),"II");
     }
 }
